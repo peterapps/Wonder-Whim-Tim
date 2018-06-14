@@ -33,6 +33,7 @@ Wonder Whim-Tim: The Video Game
 * Implement new HUD
 
 ### Gameplay Team
+* Make the characters more balanced
 * Fix gravity issue when walking off-stage
 * Learn [JavaScript](https://www.codecademy.com/en/tracks/javascript)
 * Learn [JS game development](https://www.w3schools.com/graphics/game_intro.asp)
