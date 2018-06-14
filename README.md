@@ -16,9 +16,10 @@ Wonder Whim-Tim: The Video Game
 
 ## TO-DO
 ### Design Team
-* New characters - Vincent, Eric, Tim, Alvin, Julian, Peter, Darshil, Anisha, Jocelyn, Cathleen, and more
+* New characters - Vincent, Eric, Joy, Tim, Alvin, Julian, Peter, Darshil, Prateek, Neelay, Sarah, Anisha, Jocelyn, Cathleen, and more
 * New animations - stunned, walking, jumping
 * Projectiles
+* Powerups
 * Stage
 * Background
 * Design better HUD
