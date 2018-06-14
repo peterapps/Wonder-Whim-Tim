@@ -2,7 +2,7 @@
 Wonder Whim-Tim: The Video Game
 
 ## Current Demo
-[https://rawgit.com/peterapps/Wonder-Whim-Tim/master/src/](https://rawgit.com/peterapps/Wonder-Whim-Tim/master/src/)
+[Click here](http://htmlpreview.github.io/?http://github.com/peterapps/Wonder-Whim-Tim/blob/master/src/index.html)
 
 ## Development Team
 * __Design Team__ led by Julian
