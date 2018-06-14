@@ -177,13 +177,13 @@ class Location {
     }
     drawStats(){
         this.ctx.fillStyle = "black";
-		 this.ctx.font = "30px Arial";
-		 this.ctx.textBaseline = "top";
-		 this.ctx.textAlign = "center";
+		this.ctx.font = "30px Arial";
+		this.ctx.textBaseline = "top";
+		this.ctx.textAlign = "center";
         this.ctx.fillText(this.formatTime(), 0, -(this.height - 100) + 10);
-		 this.ctx.textAlign = "left";
+		this.ctx.textAlign = "left";
         this.ctx.fillText("P1: "+Math.round(this.players[0].damage), -this.width/2 + 10, -(this.height - 100) + 10);
-		 this.ctx.textAlign = "right";
+        this.ctx.textAlign = "right";
         this.ctx.fillText("P2: "+Math.round(this.players[1].damage), this.width/2 - 10, -(this.height - 100) + 10);
     }
     setPlayers(a, b){ //void setFighter1(Fighter fighter)
