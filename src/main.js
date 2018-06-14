@@ -1,7 +1,7 @@
 var fighters, images, fighterNames, names, game, keyboard;
 fighters = {
 	 //Fighter		Name		Color		Rage		Attack		Defense		Knockback		Speed		Jump
-	"Eason":	[	"Eason",	"#A213C3",	60,			5,			0.05,		15,				8,			15		],
+	"Eason":	[	"Eason",	"#A213C3",	60,			5,			0.05,		18,				8,			15		],
 	"Ricky":	[	"Ricky",	"#404040",	80,			10,			0.20,		30,				3,			7		],
 	"Vinay": 	[	"Vinay",	"#00FF00",	100,		7,			0.35,		26,				5,			10		],
 	"Zach": 	[	"Zach",		"#17390E",	120,		6,			0.15,		16,				7,			12		],
