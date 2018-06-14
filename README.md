@@ -1,5 +1,5 @@
-# Wonder-Whim-Tim
-The Wonder Whim-Tim: The Video Game
+# Wonder Whim Tim
+Wonder Whim-Tim: The Video Game
 
 ## Current Demo
 [https://rawgit.com/peterapps/Wonder-Whim-Tim/master/src/](https://rawgit.com/peterapps/Wonder-Whim-Tim/master/src/)
