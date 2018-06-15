@@ -1,10 +1,10 @@
 var fighters, images, fighterNames, names, game, keyboard;
 fighters = {
 	 //Fighter		Name		Color		Rage		Attack		Defense		Knockback		Speed		Jump
-	"Eason":	[	"Eason",	"#A213C3",	60,			12,			0.05,		20,				8,			15		],
-	"Ricky":	[	"Ricky",	"#404040",	80,			12,			0.20,		30,				3,			7		],
-	"Vinay": 	[	"Vinay",	"#00FF00",	100,		12,			0.35,		26,				5,			10		],
-	"Zach": 	[	"Zach",		"#17390E",	120,		12,			0.15,		21,				7,			12		],
+	"Eason":	[	"Eason",	"#A213C3",	60,			12,			0.05,		20,				10,			15		],
+	"Ricky":	[	"Ricky",	"#404040",	80,			12,			0.15,		25,				3,			7		],
+	"Vinay": 	[	"Vinay",	"#00FF00",	100,		12,			0.2,		22,				5,			10		],
+	"Zach": 	[	"Zach",		"#17390E",	120,		12,			0.12,		21,				7,			12		],
 	"John": 	[	"John",		"#6499F1",	110,		5,			0.10,		10,				5,			5		]
  };
  fighterNames = [];
@@ -346,7 +346,8 @@ class Location {
 		}
 		if (this.attackedCD > 0) {
 			this.attackedCD += 1/60;
-			if (this.attackedCD >= 0.75) this.attackedCD = 0;
+            //stun time
+			if (this.attackedCD >= 0.1) this.attackedCD = 0;
 		}
 		if (!attacked && this.keyPressed("JUMP") && this.jumps < 2 && this.jumpCD <= 0) {
           this.velocity.y = this.fighter.jump;
