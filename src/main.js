@@ -1,11 +1,11 @@
 var fighters, images, fighterNames, names, game, keyboard;
 fighters = {
 	 //Fighter		Name		Color		Rage		Attack		Defense		Knockback		Speed		Jump
-	"Eason":	[	"Eason",	"#A213C3",	60,			5,			0.05,		18,				8,			15		],
-	"Ricky":	[	"Ricky",	"#404040",	80,			10,			0.20,		30,				3,			7		],
-	"Vinay": 	[	"Vinay",	"#00FF00",	100,		7,			0.35,		26,				5,			10		],
-	"Zach": 	[	"Zach",		"#17390E",	120,		6,			0.15,		16,				7,			12		],
-	"John": 	[	"John",		"#6499F1",	110,		3,			0.10,		10,				5,			5		]
+	"Eason":	[	"Eason",	"#A213C3",	60,			12,			0.05,		20,				8,			15		],
+	"Ricky":	[	"Ricky",	"#404040",	80,			12,			0.20,		30,				3,			7		],
+	"Vinay": 	[	"Vinay",	"#00FF00",	100,		12,			0.35,		26,				5,			10		],
+	"Zach": 	[	"Zach",		"#17390E",	120,		12,			0.15,		21,				7,			12		],
+	"John": 	[	"John",		"#6499F1",	110,		5,			0.10,		10,				5,			5		]
  };
  fighterNames = [];
  for (var i in fighters) fighterNames.push(i);
@@ -396,10 +396,12 @@ class Location {
 			this.fighter.sprite.animation = "standing";
 		}
 		this.multiplier = 1;
-		if (this.damage > 20){
+        //Changed original from 20 to 0
+		if (this.damage > 0){
 			//this.multiplier = Math.pow(2, 0.2 * this.damage);
 			//CALCULATE MULTIPLIER
-			this.multiplier += 0.005 * (this.damage - 20);
+            //Changed
+			this.multiplier += .02 * (this.damage);
 		}
     }
 	touchingStage(){
@@ -435,8 +437,9 @@ class Location {
 		if (col){
 			if ( (this.direction == 1 && this.location.x < this.other.location.x) || (this.direction == -1 && this.location.x > this.other.location.x) ) {
 				var me = this.multiplier;
-				if (this.damage > this.fighter.threshold) me *= 1.5;
-				if (this.other.damage > 20) me += this.other.multiplier;
+				//if (this.damage > this.fighter.threshold) me *= 1.5;
+                //Changed this
+				if (this.other.damage > 0) me += this.other.multiplier - 1;
 				me /= 2;
 				this.fighter.attack(this.other, this.direction, me);
 			}
