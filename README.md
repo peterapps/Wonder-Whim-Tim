@@ -35,6 +35,7 @@ Wonder Whim-Tim: The Video Game
 
 ### Gameplay Team
 * Stock instead of time (If time display)
+* Dash
 * Make the characters more balanced
 * Fix gravity issue when walking off-stage
 * Learn [JavaScript](https://www.codecademy.com/en/tracks/javascript)
