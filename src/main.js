@@ -376,7 +376,7 @@ class Location {
     	//Check if we should attack other player
     	var col = this.pCollision(this.other);
 		if (col){
-			if (this.cpuAttackCD < 0.5){
+			if (this.cpuAttackCD < 0.001){
 				//if ( (this.direction == 1 && this.location.x < this.other.location.x) || (this.direction == -1 && this.location.x > this.other.location.x) ) {
 					this.simulatedKeys.ATTACK = true;
 					this.cpuAttackCD += 1/60;
