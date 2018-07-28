@@ -20,9 +20,11 @@ app.get( '/', function( req, res){
 
 app.get('/*', function( req, res, next){
 	var file = req.params[0];
-	
+	if (file!='socket.io/socket.io.js'){
+		file = "../src/"+ file;
+	}
 	if(verbose) console.log('\t :: Express :: file requested : ' + file);
 	
-	res.sendFile(path.resolve(__dirname+ '/../src/'+file));
+	res.sendFile(path.resolve(__dirname+'/'+ file));
 });
 
