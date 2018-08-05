@@ -16,6 +16,6 @@ io.on('connection', function(socket){
 io.emit('some event', { for: 'everyone' });
 
 
-http.listen(3000, function(){
-	console.log('listening on *:3000');
-});
+http.listen(3000, '0.0.0.0');
+
+console.log('listening on *:3000');

@@ -7,8 +7,12 @@
 		<script type = "text/javascript" src = "/socket.io/socket.io.js"></script>
 		<script type = "text/javascript">
 			var socket = io.connect("/");
-			socket.on('onconnected', function(data){
-				console.log('connected succesfully to the socket.io server. My server side ID is ' + data.id );
+			socket.on('connect', function(data){
+				console.log('connected successfully to the socket.io server.' );
+				console.log(data);
+			});
+			socket.on('news', function(data){
+				console.log('News: ' + data.hello);
 			});
 		</script>
     </head>
@@ -68,8 +72,8 @@
 			</p>
 	    </div>
 	    <div class="footer">
-			<img src="./img/logo.png" alt="Hyperactive Studios" style="height:1em;" /> Hyperactive Studios. Developed by Peter Linder and Julian Lioanag.
-			Version 0.10
+			<img src="./img/logo.png" alt="Hyperactive Studios" style="height:1em;" /> Hyperactive Studios.
+			Version 0.11
 		</div>
     </body>
 </html>
